@@ -175,6 +175,33 @@
         color: rgba(0, 0, 0, 0.6);
 }
 
+.post-content .post-time {
+        position: relative;
+        top: 95px;
+        display: block;
+        margin-bottom: -20px;
+        margin-left: -260px;
+        font-size: 14px;
+        color: #000;
+}
+
+.post-content .apss-share-text {
+        margin-bottom: 10px;
+        font-family: ProximaNova, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+        opacity: 1;
+}
+
+.post-content .apss-social-share {
+        width: 160px;
+        height: 85px;
+        margin-bottom: -85px;
+        margin-left: -270px;
+        border-bottom: 1px solid #d8d8d8;
+}
+
 .post-single--tiled .read-further {
         display: none;
 }
@@ -1620,13 +1647,34 @@ body {
             font-size: 20px;
         }
 
+        .post-content .post-time {
+            position: relative;
+            top: 0;
+            display: block;
+            margin-bottom: 16px;
+            margin-left: 0;
+            line-height: 60px;
+            border-bottom: 1px solid #d8d8d8;
+        }
+
+        .post-content .apss-share-text {
+            display: none;
+        }
+
+        .post-content .apss-social-share {
+            float: right;
+            height: 52px;
+            margin: -76px 0 0;
+            border-bottom: none;
+        }
+
     .post-content {
         top: -100px;
         margin-bottom: -100px
     }
 
     .post-content h1 {
-            margin-bottom: 32px;
+            margin-bottom: 24px;
             font-size: 32px;
         }
 
@@ -1727,9 +1775,9 @@ body {
         }
 
         .post-content .owl-carousel {
-            width: 140% !important;
+            width: 115% !important;
             margin-bottom: 16px !important;
-            margin-left: -30% !important;
+            margin-left: -10% !important;
         }
 
         .post-content h3 {
@@ -1738,7 +1786,7 @@ body {
 
         .post-content [rel="lightbox"] {
             width: 65%;
-            margin: 0 20px 0 -25%;
+            margin: 0 20px 0 -10%;
         }
 
         .post-content p {
@@ -1751,16 +1799,42 @@ body {
             font-size: 16px;
         }
 
+        .post-content .post-time {
+            font-size: 12px;
+        }
+
+        .post-content .apss-social-share {
+            width: 100px;
+            margin-top: -66px;
+        }
+
     .post-content {
         top: -70px;
         margin-bottom: -70px;
+        margin-left: 0;
         padding: 30px 4%
     }
 
     .post-content h1 {
-            margin-bottom: 22px;
-            font-size: 24px;
+            margin-bottom: 12px;
+            font-size: 20px;
         }
+
+    .apss-theme-4 .apss-single-icon a {
+        margin: 4px;
+    }
+
+    .apss-theme-4 .apss-icon-block,
+    .apss-theme-4 .apss-single-icon .fa {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        font-size: 14px;
+    }
+
+    .apss-theme-4 .apss-single-icon .fa {
+        padding-top: 4px;
+    }
 
     .newsletter-signup {
         margin: 0 0 40px 0;

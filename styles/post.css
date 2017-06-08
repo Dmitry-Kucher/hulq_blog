@@ -21,6 +21,33 @@
         color: #000;
     }
 
+    & .apss-social-share {
+        width: 160px;
+        height: 85px;
+        margin-bottom: -85px;
+        margin-left: -270px;
+        border-bottom: 1px solid var(--very-light-gray);
+    }
+
+    & .apss-share-text {
+        margin-bottom: 10px;
+        font-family: var(--font-primary);
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+        opacity: 1;
+    }
+
+    & .post-time {
+        position: relative;
+        top: 95px;
+        display: block;
+        margin-bottom: -20px;
+        margin-left: -260px;
+        font-size: 14px;
+        color: #000;
+    }
+
     & h2 {
         margin-bottom: 42px;
         font-size: 24px;
@@ -245,8 +272,29 @@
         margin-bottom: -100px;
 
         & h1 {
-            margin-bottom: 32px;
+            margin-bottom: 24px;
             font-size: 32px;
+        }
+
+        & .apss-social-share {
+            float: right;
+            height: 52px;
+            margin: -76px 0 0;
+            border-bottom: none;
+        }
+
+        & .apss-share-text {
+            display: none;
+        }
+
+        & .post-time {
+            position: relative;
+            top: 0;
+            display: block;
+            margin-bottom: 16px;
+            margin-left: 0;
+            line-height: 60px;
+            border-bottom: 1px solid var(--very-light-gray);
         }
 
         & h2 {
@@ -337,11 +385,21 @@
     .post-content {
         top: -70px;
         margin-bottom: -70px;
+        margin-left: 0;
         padding: 30px 4%;
 
         & h1 {
-            margin-bottom: 22px;
-            font-size: 24px;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        & .apss-social-share {
+            width: 100px;
+            margin-top: -66px;
+        }
+
+        & .post-time {
+            font-size: 12px;
         }
 
         & h2 {
@@ -356,7 +414,7 @@
 
         & [rel="lightbox"] {
             width: 65%;
-            margin: 0 20px 0 -25%;
+            margin: 0 20px 0 -10%;
         }
 
         & h3 {
@@ -364,10 +422,26 @@
         }
 
         & .owl-carousel {
-            width: 140% !important;
+            width: 115% !important;
             margin-bottom: 16px !important;
-            margin-left: -30% !important;
+            margin-left: -10% !important;
         }
+    }
+
+    .apss-theme-4 .apss-single-icon a {
+        margin: 4px;
+    }
+
+    .apss-theme-4 .apss-icon-block,
+    .apss-theme-4 .apss-single-icon .fa {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        font-size: 14px;
+    }
+
+    .apss-theme-4 .apss-single-icon .fa {
+        padding-top: 4px;
     }
 
     .newsletter-signup {

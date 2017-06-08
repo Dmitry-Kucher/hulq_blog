@@ -21,6 +21,7 @@ get_header(); ?>
                     <div class="container-inner">
                         <div class="post-content">
                             <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+                            <span class="post-time"><?php echo get_post_time('l j F Y'); ?></span>
                             <?php the_content(); ?>
                             <?php the_tags('', ''); ?>
                         </div>
