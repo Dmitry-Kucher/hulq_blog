@@ -1033,7 +1033,7 @@ body {
             height: 100%;
             -webkit-transform: translateX(-50%);
                     transform: translateX(-50%);
-            background: linear-gradient(#cacaca 0%, rgba(0, 0, 0, 0) 100%);
+            background: linear-gradient(#4e4e4e 0%, rgba(0, 0, 0, 0) 90%);
 }
 
 .site-branding {
@@ -1597,7 +1597,6 @@ body {
 .up-next {
     position: relative;
     height: 240px;
-    padding-bottom: 2.5%;
     margin: 0 -20px;
     overflow: hidden;
     color: #fff
@@ -1689,7 +1688,6 @@ body {
 
     .up-next {
         height: 180px;
-        padding-bottom: 1%;
     }
 }
 

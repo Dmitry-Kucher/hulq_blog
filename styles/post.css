@@ -197,7 +197,6 @@
 .up-next {
     position: relative;
     height: 240px;
-    padding-bottom: 2.5%;
     margin: 0 -20px;
     overflow: hidden;
     color: #fff;
@@ -334,7 +333,6 @@
 
     .up-next {
         height: 180px;
-        padding-bottom: 1%;
     }
 }
 
