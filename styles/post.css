@@ -130,6 +130,20 @@
         padding: 0 7%;
     }
 
+    & .wpcf7-form.active .newsletter-text-to-hide {
+        display: none;
+    }
+
+    & .wpcf7-form.active .wpcf7-form-control-wrap {
+        display: block;
+    }
+
+    & .wpcf7-response-output {
+        clear: both;
+        margin: 0 0 10px;
+        transform: translateY(10px);
+    }
+
     & label {
         font-size: 20px;
         color: var(--content-gray);
@@ -145,8 +159,11 @@
     }
 
     & .wpcf7-email {
+        width: calc(100% - 20px);
+        height: 56px;
         border: 0;
         border-bottom: 1px solid var(--very-light-gray);
+        color: var(--content-gray);
     }
 
     & ::-webkit-input-placeholder {
