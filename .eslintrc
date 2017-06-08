@@ -1,0 +1,28 @@
+{
+  "extends": "airbnb",
+  "globals":{
+    "$": true,
+    "window": true,
+    "global": true,
+    "document": true,
+    "FlowRouter": true
+  },
+  "rules": {
+    "indent": ["error", 4],
+    "linebreak-style": ["warn", "unix"],
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
+    "dot-notation": 1,
+    "comma-dangle": ["error", "never"],
+    "arrow-body-style": [1, "as-needed"],
+    "one-var": 1,
+    "prefer-const": 1,
+    "no-param-reassign": 1,
+    "wrap-iife": ["error", "inside"],
+    "no-plusplus": 0,
+    "no-console": 2,
+    "react/jsx-indent": ["error", 4],
+    "import/no-absolute-path": 1,
+    "import/no-unresolved": 1,
+    "import/extensions": 1
+  }
+}

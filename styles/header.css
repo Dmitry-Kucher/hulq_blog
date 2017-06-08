@@ -1,0 +1,334 @@
+.site-header {
+    position: relative;
+    z-index: 3;
+    height: 120px;
+    margin-bottom: -120px;
+
+    & > .container {
+        height: 100%;
+        padding: 20px;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 50%;
+            width: 1280px;
+            height: 100%;
+            transform: translateX(-50%);
+            background: linear-gradient(#cacaca 0%, rgba(0, 0, 0, 0) 100%);
+        }
+    }
+
+    &__right {
+        position: relative;
+        z-index: 2;
+        float: right;
+        width: 50%;
+    }
+}
+
+.site-branding {
+    position: relative;
+    z-index: 2;
+    float: left;
+}
+
+.site-title {
+    line-height: 32px;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+
+    &__feed {
+        display: inline-block;
+        padding: 2px 5px 0;
+        background: #000;
+        color: var(--pale-gray);
+    }
+}
+
+.main-navigation,
+.header-search {
+    display: inline-block;
+}
+
+.main-navigation {
+    float: left;
+
+    & ul {
+        list-style-type: none;
+    }
+
+    & li {
+        float: left;
+        display: inline-block;
+        margin-right: 24px;
+        line-height: 34px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.header-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+
+    & .input-wrapper,
+    & [type="submit"] {
+        display: none;
+    }
+
+    & .input-wrapper input {
+        position: relative;
+        top: -5px;
+        width: calc(100% - 42px);
+        height: 42px;
+        padding: 0 15px;
+        border: none;
+        border-bottom: 1px solid var(--pale-gray);
+        font-size: 24px;
+        color: #fff;
+        background: transparent;
+    }
+
+    & ::-webkit-input-placeholder {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    & :-moz-placeholder {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    & ::-moz-placeholder {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    & :-ms-input-placeholder {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    & .search-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 35px;
+        line-height: 34px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    & i {
+        position: absolute;
+        top: 50%;
+        right: -35px;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        background: url(./img/search_ic.svg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    & .search-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+        line-height: 34px;
+        font-size: 72px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.search-toggled {
+
+    & .main-navigation {
+        display: none;
+    }
+
+    & .header-search {
+        width: 100%;
+    }
+
+    & .header-search .search-toggle {
+        display: none;
+    }
+
+    & .header-search .search-close {
+        display: block;
+    }
+
+    & .header-search .input-wrapper {
+        display: block;
+    }
+}
+
+.tags-container {
+    position: absolute;
+    z-index: 3;
+    bottom: 15px;
+    display: none;
+    width: 100%;
+
+    & ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    & li {
+        float: left;
+        display: inline-block;
+        height: 24px;
+        margin-right: 8px;
+        padding: 0 8px;
+        line-height: 24px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #000;
+        background: var(--light-gray);
+    }
+
+    &.toggled {
+        display: block;
+    }
+}
+
+.archive .site-header,
+.search-results .site-header {
+    position: relative;
+    height: 80px;
+    margin-bottom: 100px;
+    background: #000;
+
+    & > .container {
+
+        &::after {
+            content: none;
+        }
+    }
+
+    & .site-title__feed {
+        color: #000;
+        background: var(--pink);
+    }
+
+    & .tags-container {
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    .main-navigation li {
+        font-size: 13px;
+        margin-right: 18px;
+    }
+
+    .header-search .search-toggle {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .site-header__right {
+        width: 75%;
+    }
+
+    .main-navigation li {
+        margin-right: 12px;
+    }
+
+    .archive .site-header,
+    .search-results .site-header {
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 679px) {
+
+    .site-header {
+        height: 68px;
+        margin-bottom: -68px;
+
+        & > .container {
+            padding: 16px;
+        }
+
+        &__right {
+            width: calc(100% - 130px);
+        }
+    }
+
+    .site-title {
+        font-size: 20px;
+
+        &__feed {
+            padding: 3px 5px 0;
+        }
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .header-search {
+        margin-right: 0;
+
+        & .search-toggle span {
+            display: none;
+        }
+
+        & .search-toggle i {
+            top: 4px;
+            transform: none;
+        }
+
+        & .input-wrapper input {
+            padding: 0 10px;
+            font-size: 16px;
+        }
+
+        & ::-webkit-input-placeholder {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        & :-moz-placeholder {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        & ::-moz-placeholder {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        & :-ms-input-placeholder {
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+
+    .archive .site-header,
+    .search-results .site-header {
+        margin-bottom: 30px;
+    }
+}

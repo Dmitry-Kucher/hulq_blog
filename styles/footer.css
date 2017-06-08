@@ -1,0 +1,44 @@
+.newsletter-footer {
+    margin-bottom: 0 !important;
+}
+
+.site-footer {
+    height: 68px;
+    line-height: 68px;
+    font-size: 14px;
+    color: var(--content-gray);
+}
+
+.footer-copy {
+    float: left;
+}
+
+.footer-social {
+    float: right;
+
+    & span {
+        margin-right: 20px;
+    }
+
+    & a {
+        display: inline-block;
+        transform: translateY(30%);
+        margin-right: 12px;
+    }
+
+    & a:last-child {
+        margin-right: 0;
+    }
+}
+
+.single-post .site-footer,
+.single-post .newsletter-footer {
+    display: none;
+}
+
+@media (max-width: 679px) {
+
+    .footer-social span {
+        display: none;
+    }
+}
