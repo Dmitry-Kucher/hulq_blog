@@ -35,7 +35,9 @@ get_header(); ?>
                                 </div>
                                 <div class="post-info">
                                     <?php $category = get_the_category(); ?>
-                                    <span class="post-category"><?php echo $category[0]->cat_name; ?></span>
+                                    <a href="<?php echo get_category_link(get_cat_ID($category[0]->cat_name)); ?>">
+                                        <span class="post-category"><?php echo $category[0]->cat_name; ?></span>
+                                    </a>
                                     <a href="<?php the_permalink(); ?>"><?php the_title('<h1 class="entry-title">', '</h1>'); ?></a>
                                     <p><?php the_excerpt(); ?></p>
                                     <a href="<?php the_permalink(); ?>" class="read-further">Read further &xrarr;</a>
