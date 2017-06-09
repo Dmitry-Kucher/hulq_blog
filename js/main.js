@@ -39,6 +39,16 @@
         $('body').toggleClass('menu-open');
     }
 
+    function showMobileTags(e) {
+        e.preventDefault();
+
+        $('body').addClass('mobile-tags-show');
+    }
+
+    function hideMobileTags() {
+        $('body').removeClass('mobile-tags-show');
+    }
+
     $('#primary-menu').children('li').first().children('a').on('click', toggleCategories);
 
     $('.search-toggle').on('click', searchToggle);
@@ -48,4 +58,8 @@
     $('.wpcf7-form').find('.wpcf7-submit').add('.newsletter-text-to-hide').on('click', newsletterOnSubmit);
 
     $('.mobile-menu__toggle').on('click', toggleMobileMenu);
+
+    $('.mobile-navigation').find('li:nth-child(2)').children('a').on('click', showMobileTags);
+
+    $('.tags-mobile-close').add('.tags-mobile-back').on('click', hideMobileTags);
 })(jQuery);

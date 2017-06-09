@@ -63,6 +63,18 @@
         <nav id="mobile-navigation" class="mobile-navigation" role="navigation">
             <?php wp_nav_menu(array('theme_location' => 'menu-1', 'menu_id' => 'mobile-menu')); ?>
         </nav><!-- #site-navigation -->
+        <div class="tags-container-mobile">
+            <span class="tags-mobile-close">&times;</span>
+            <span class="tags-mobile-back"></span>
+            <h3>Categories</h3>
+            <ul>
+                <?php $tags = get_tags();
+                foreach ($tags as $tag) {
+                    $tag_link = get_tag_link($tag->term_id); ?>
+                    <li><a href="<?php echo $tag_link; ?>"><?php echo $tag->name; ?></a></li>
+                <?php } ?>
+            </ul>
+        </div>
     </div>
 
     <div id="content" class="site-content">
