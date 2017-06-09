@@ -35,6 +35,8 @@
             </div><!-- .site-branding -->
 
             <div class="site-header__right">
+                <span class="mobile-menu__toggle"></span>
+
                 <nav id="site-navigation" class="main-navigation" role="navigation">
                     <?php wp_nav_menu(array('theme_location' => 'menu-1', 'menu_id' => 'primary-menu')); ?>
                 </nav><!-- #site-navigation -->
@@ -56,5 +58,11 @@
             </div>
         </div>
     </header><!-- #masthead -->
+
+    <div class="mobile-menu-screen">
+        <nav id="mobile-navigation" class="mobile-navigation" role="navigation">
+            <?php wp_nav_menu(array('theme_location' => 'menu-1', 'menu_id' => 'mobile-menu')); ?>
+        </nav><!-- #site-navigation -->
+    </div>
 
     <div id="content" class="site-content">

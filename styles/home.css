@@ -292,7 +292,7 @@
     }
 
     .post-single--large:first-child {
-        margin-bottom: 20px;
+        margin: 0 -16px 20px;
 
         & .post-info {
             bottom: 30px;
