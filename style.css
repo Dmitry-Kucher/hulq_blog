@@ -440,11 +440,11 @@ body.menu-open .mobile-menu__toggle {
         margin-right: 12px;
 }
 
-.archive .site-header .tags-container, .search-results .site-header .tags-container {
+.archive .site-header .tags-container, .search-results .site-header .tags-container, .page .site-header .tags-container {
         bottom: -50px;
 }
 
-.archive .site-header .site-title__feed, .search-results .site-header .site-title__feed {
+.archive .site-header .site-title__feed, .search-results .site-header .site-title__feed, .page .site-header .site-title__feed {
         color: #000;
         background: #ff3450;
 }
@@ -1235,17 +1235,18 @@ body,
 }
 
 .archive .site-header,
-.search-results .site-header {
+.search-results .site-header,
+.page .site-header {
     position: relative;
     height: 80px;
     margin-bottom: 100px;
     background: #000
 }
 
-.archive .site-header > .container, .search-results .site-header > .container {
+.archive .site-header > .container, .search-results .site-header > .container, .page .site-header > .container {
 }
 
-.archive .site-header > .container::after, .search-results .site-header > .container::after {
+.archive .site-header > .container::after, .search-results .site-header > .container::after, .page .site-header > .container::after {
             content: none;
 }
 
@@ -1272,7 +1273,8 @@ body,
     }
 
     .archive .site-header,
-    .search-results .site-header {
+    .search-results .site-header,
+    .page .site-header {
         margin-bottom: 70px;
     }
 }
@@ -1344,7 +1346,8 @@ body,
         }
 
     .archive .site-header,
-    .search-results .site-header {
+    .search-results .site-header,
+    .page .site-header {
         margin-bottom: 30px;
     }
 }

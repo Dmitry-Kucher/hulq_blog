@@ -49,7 +49,7 @@
         $('body').removeClass('mobile-tags-show');
     }
 
-    $('#primary-menu').children('li').first().children('a').on('click', toggleCategories);
+    $('#primary-menu').children('li:nth-child(2)').children('a').on('click', toggleCategories);
 
     $('.search-toggle').on('click', searchToggle);
 
