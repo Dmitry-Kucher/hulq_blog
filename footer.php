@@ -13,23 +13,23 @@
 
 </div><!-- #content -->
 
-
-<div class="container-inner">
-    <div class="newsletter-signup newsletter-footer">
-        <?php echo do_shortcode('[contact-form-7 id="26" title="Signup"]'); ?>
-    </div>
-</div>
-
-<footer id="colophon" class="site-footer" role="contentinfo">
+<footer id="colophon" role="contentinfo">
     <div class="container-inner">
-        <div class="footer-copy">
-            &copy; Hulq 2017
+        <div class="newsletter-signup newsletter-footer">
+            <?php echo do_shortcode('[contact-form-7 id="26" title="Signup"]'); ?>
         </div>
-        <div class="footer-social">
-            <span>Stay connected</span>
-            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/googleplus.svg" alt="Google+"></a>
-            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.svg" alt="Twitter"></a>
+    </div>
+    <div class="site-footer">
+        <div class="container-inner">
+            <div class="footer-copy">
+                &copy; Hulq 2017
+            </div>
+            <div class="footer-social">
+                <span>Stay connected</span>
+                <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/googleplus.svg" alt="Google+"></a>
+                <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.svg" alt="Twitter"></a>
+            </div>
         </div>
     </div>
 </footer><!-- #colophon -->

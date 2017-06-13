@@ -1,3 +1,13 @@
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer#colophon {
+    margin: auto 0 0;
+}
+
 .newsletter-footer {
     margin-bottom: 0 !important;
 }
