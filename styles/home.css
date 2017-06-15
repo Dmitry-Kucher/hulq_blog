@@ -1,3 +1,7 @@
+.home .site-main > .container {
+    padding-top: calc(70vh + 40px);
+}
+
 .post-single {
 
     & .post-category {
@@ -23,14 +27,31 @@
 }
 
 .post-single--large:first-child {
-    position: relative;
-    height: 640px;
-    margin: 0 -20px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70vh;
     overflow: hidden;
 
     & > .container-inner {
         max-width: none;
         padding: 0;
+    }
+
+    & .post-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    & img {
+        height: auto;
     }
 
     & .post-image::after {
@@ -96,6 +117,10 @@
         width: calc(50% - 12px);
     }
 
+    & img {
+        height: auto;
+    }
+
     & .post-info {
         margin-left: 24px;
     }
@@ -153,6 +178,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        height: auto;
         transform: translate(-50%, -50%);
     }
 
@@ -200,6 +226,10 @@
         & h2 {
             font-size: 16px;
         }
+    }
+
+    .home .site-main > .container {
+        padding-top: 520px;
     }
 
     .post-single--large:first-child {
@@ -272,8 +302,21 @@
 
 @media (max-width: 960px) {
 
+    .home .site-main > .container {
+        padding-top: 0;
+    }
+
     .post-single--large:first-child {
+        position: relative;
+        top: 0;
+        left: 0;
         height: auto;
+        margin: 0 -20px 40px;
+    }
+
+    .post-single--large:first-child .post-image {
+        position: static;
+        transform: none;
     }
 }
 

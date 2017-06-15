@@ -15,7 +15,7 @@ get_header(); ?>
             <?php while (have_posts()) : the_post(); ?>
 
                 <div class="container">
-                    <div class="post-image extend">
+                    <div class="post-image post-image--main extend">
                         <?php the_post_thumbnail(); ?>
                     </div>
                     <div class="container-inner">

@@ -1,8 +1,24 @@
-.post-image {
+.single-post .site-main > .container {
+    padding-top: 70vh;
+}
+
+.single-post .post-image--main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70vh;
+    overflow: hidden;
 
     & img {
-        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
         height: auto;
+        min-width: 100%;
+        min-height: 100%;
     }
 }
 
@@ -283,6 +299,14 @@
 
 @media (max-width: 1024px) {
 
+    .single-post .site-main > .container {
+        padding-top: 520px;
+    }
+
+    .single-post .post-image--main {
+        height: 520px;
+    }
+
     .post-content {
         top: -100px;
         margin-bottom: -100px;
@@ -354,6 +378,21 @@
 }
 
 @media (max-width: 960px) {
+
+    .single-post .site-main > .container {
+        padding-top: 0;
+    }
+
+    .single-post .post-image--main {
+        position: relative;
+        height: auto;
+        max-height: 70vh;
+
+        & img {
+            position: static;
+            transform: none;
+        }
+    }
 
     .newsletter-signup {
 
