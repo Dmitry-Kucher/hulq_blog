@@ -26,9 +26,9 @@
             </div>
             <div class="footer-social">
                 <span>Stay connected</span>
-                <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.facebook.com/hulqlease/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.svg" alt="Facebook"></a>
                 <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/googleplus.svg" alt="Google+"></a>
-                <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.svg" alt="Twitter"></a>
+                <a href="https://twitter.com/Hulqlease"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.svg" alt="Twitter"></a>
             </div>
         </div>
     </div>
