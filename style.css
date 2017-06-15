@@ -279,7 +279,9 @@ body.menu-open .mobile-menu__toggle {
         height: auto;
 }
 
-.post-content p {
+.post-content p,
+    .post-content ol,
+    .post-content ul {
         margin-bottom: 42px;
         line-height: 1.5;
         font-size: 20px;
@@ -1864,7 +1866,9 @@ footer#colophon {
             margin: 0 25px 0 -25%;
         }
 
-        .post-content p {
+        .post-content p,
+        .post-content ol,
+        .post-content ul {
             margin-bottom: 32px;
             font-size: 16px;
         }
@@ -2039,7 +2043,9 @@ footer#colophon {
             margin: 0 20px 0 -10%;
         }
 
-        .post-content p {
+        .post-content p,
+        .post-content ol,
+        .post-content ul {
             margin-bottom: 24px;
             font-size: 14px;
         }
