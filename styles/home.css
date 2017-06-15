@@ -118,6 +118,11 @@
         width: calc(50% - 12px);
     }
 
+    & .post-image {
+        max-height: 260px;
+        overflow: hidden;
+    }
+
     & img {
         height: auto;
     }
@@ -362,6 +367,10 @@
         & .post-info {
             float: none;
             width: 100%;
+        }
+
+        & .post-image {
+            max-height: 180px;
         }
 
         & .post-info {

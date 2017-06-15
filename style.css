@@ -372,6 +372,11 @@ body.menu-open .mobile-menu__toggle {
         height: auto;
 }
 
+.post-single--large:nth-child(-n + 4):not(:first-child) .post-image {
+        max-height: 260px;
+        overflow: hidden;
+}
+
 .post-single--large:nth-child(-n + 4):not(:first-child) .post-image,
     .post-single--large:nth-child(-n + 4):not(:first-child) .post-info {
         float: left;
@@ -1683,6 +1688,10 @@ footer#colophon {
 
         .post-single--large:nth-child(-n + 4):not(:first-child) .post-info {
             margin-left: 0;
+        }
+
+        .post-single--large:nth-child(-n + 4):not(:first-child) .post-image {
+            max-height: 180px;
         }
 
         .post-single--large:first-child .read-further {
