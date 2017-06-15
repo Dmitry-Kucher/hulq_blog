@@ -149,7 +149,33 @@ add_filter( 'wp_trim_excerpt', 'my_custom_excerpt', 10, 2 );
 function my_custom_excerpt($text, $raw_excerpt) {
     if( ! $raw_excerpt ) {
         $content = apply_filters( 'the_content', strip_shortcodes( get_the_content() ) );
-        $text = substr( $content, 0, strpos( $content, '</h2>' ) + 4 );
+        $text = substr( $content, 0, 92 );
     }
     return $text;
+}
+
+function excerpt($limit) {
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    if (count($excerpt)>=$limit) {
+        array_pop($excerpt);
+        $excerpt = implode(" ",$excerpt).'...';
+    } else {
+        $excerpt = implode(" ",$excerpt);
+    }
+    $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
+    return wp_strip_all_tags($excerpt);
+}
+
+function content($limit) {
+    $content = explode(' ', get_the_content(), $limit);
+    if (count($content)>=$limit) {
+        array_pop($content);
+        $content = implode(" ",$content).'...';
+    } else {
+        $content = implode(" ",$content);
+    }
+    $content = preg_replace('/[.+]/','', $content);
+    $content = apply_filters('the_content', $content);
+    $content = str_replace(']]>', ']]&gt;', $content);
+    return strip_tags($content);
 }

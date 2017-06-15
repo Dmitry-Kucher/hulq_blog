@@ -39,7 +39,7 @@ get_header(); ?>
                                         <span class="post-category"><?php echo $category[0]->cat_name; ?></span>
                                     </a>
                                     <a href="<?php the_permalink(); ?>"><?php the_title('<h1 class="entry-title">', '</h1>'); ?></a>
-                                    <p><?php the_excerpt(); ?></p>
+                                    <h2><?php echo content(20); ?></h2>
                                     <a href="<?php the_permalink(); ?>" class="read-further">Read further &xrarr;</a>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@ get_header(); ?>
                                         <?php $category = get_the_category(); ?>
                                         <span class="post-category"><?php echo $category[0]->cat_name; ?></span>
                                         <a href="<?php the_permalink(); ?>"><?php the_title('<h1 class="entry-title">', '</h1>'); ?></a>
-                                        <p><?php the_excerpt(); ?></p>
+                                        <h2><?php echo content(20); ?></h2>
                                         <a href="<?php the_permalink(); ?>" class="read-further">Read further
                                             &xrarr;</a>
                                     </div>
