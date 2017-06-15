@@ -6,7 +6,7 @@
 
     & .post-category {
         display: block;
-        margin: 12px 0 18px;
+        margin: 14px 0 10px;
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
@@ -69,9 +69,10 @@
     & .post-info {
         position: absolute;
         z-index: 2;
-        left: 50%;
+        left: calc(50% + 12px);
         bottom: 35%;
         transform: translateY(50%);
+        max-width: 630px;
         padding-right: 30px;
     }
 
@@ -167,6 +168,7 @@
 .post-single--tiled {
     float: left;
     width: calc((100% - 48px) / 3);
+    height: 350px;
     margin-bottom: 50px;
 
     &:nth-child(3n + 1),
@@ -189,7 +191,6 @@
     }
 
     & h1 {
-        height: 78px;
         overflow: hidden;
         margin-bottom: 8px;
         font-size: 22px;
@@ -225,7 +226,7 @@
     .post-single {
 
         & .post-category {
-            margin: 8px 0 14px;
+            margin: 10px 0 8px;
             font-size: 13px;
         }
 
@@ -282,6 +283,7 @@
 
     .post-single--tiled {
         width: calc((100% - 18px) / 2);
+        height: 250px;
         margin-bottom: 35px;
 
         &:nth-child(3n + 1),
@@ -406,6 +408,7 @@
     .post-single--tiled {
         float: none;
         width: 100%;
+        height: auto;
         margin-bottom: 12px;
         padding-bottom: 12px;
         overflow: hidden;

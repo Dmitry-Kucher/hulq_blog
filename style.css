@@ -334,7 +334,6 @@ body.menu-open .mobile-menu__toggle {
 }
 
 .post-single--tiled h1 {
-        height: 78px;
         overflow: hidden;
         margin-bottom: 8px;
         font-size: 22px;
@@ -412,10 +411,11 @@ body.menu-open .mobile-menu__toggle {
 .post-single--large:first-child .post-info {
         position: absolute;
         z-index: 2;
-        left: 50%;
+        left: calc(50% + 12px);
         bottom: 35%;
         -webkit-transform: translateY(50%);
                 transform: translateY(50%);
+        max-width: 630px;
         padding-right: 30px;
 }
 
@@ -605,7 +605,7 @@ body.menu-open .mobile-menu__toggle {
         position: relative;
         z-index: 2;
         float: right;
-        width: 50%;
+        width: calc(50% - 12px);
 }/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -1235,6 +1235,7 @@ body,
 
 .main-navigation ul {
         list-style-type: none;
+        padding: 0;
 }
 
 .header-search {
@@ -1440,6 +1441,10 @@ footer#colophon {
     display: none;
 }
 
+.home footer#colophon {
+    margin-top: 80px;
+}
+
 @media (max-width: 679px) {
 
     .footer-social span {
@@ -1456,7 +1461,7 @@ footer#colophon {
 
 .post-single .post-category {
         display: block;
-        margin: 12px 0 18px;
+        margin: 14px 0 10px;
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
@@ -1517,6 +1522,7 @@ footer#colophon {
 .post-single--tiled {
     float: left;
     width: calc((100% - 48px) / 3);
+    height: 350px;
     margin-bottom: 50px
 }
 
@@ -1587,7 +1593,7 @@ footer#colophon {
     }
 
     .post-single .post-category {
-            margin: 8px 0 14px;
+            margin: 10px 0 8px;
             font-size: 13px;
         }
 
@@ -1620,6 +1626,7 @@ footer#colophon {
 
     .post-single--tiled {
         width: calc((100% - 18px) / 2);
+        height: 250px;
         margin-bottom: 35px
     }
 
@@ -1761,6 +1768,7 @@ footer#colophon {
     .post-single--tiled {
         float: none;
         width: 100%;
+        height: auto;
         margin-bottom: 12px;
         padding-bottom: 12px;
         overflow: hidden;
