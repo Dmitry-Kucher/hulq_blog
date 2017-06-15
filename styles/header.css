@@ -220,7 +220,8 @@
 
 .archive,
 .search-results,
-.page {
+.page,
+.search-no-results {
 
     & .site-header {
         position: relative;
@@ -274,7 +275,8 @@
 
     .archive .site-header,
     .search-results .site-header,
-    .page .site-header {
+    .page .site-header,
+    .search-no-results .site-header {
         margin-bottom: 70px;
     }
 }
@@ -353,7 +355,8 @@
 
     .archive .site-header,
     .search-results .site-header,
-    .page .site-header {
+    .page .site-header,
+    .search-no-results .site-header {
         margin-bottom: 30px;
     }
 }

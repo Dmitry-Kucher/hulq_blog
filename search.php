@@ -15,13 +15,13 @@ get_header(); ?>
             <?php
             if (have_posts()) : ?>
 
-                <header class="page-header">
-                    <div class="container-inner">
-                        <h1 class="page-title"><?php printf(esc_html__('Search Results: %s', 'hulq_blog'), '<span>' . get_search_query() . '</span>'); ?></h1>
-                    </div>
-                </header><!-- .page-header -->
+            <header class="page-header">
+                <div class="container-inner">
+                    <h1 class="page-title"><?php printf(esc_html__('Search Results: %s', 'hulq_blog'), '<span>' . get_search_query() . '</span>'); ?></h1>
+                </div>
+            </header><!-- .page-header -->
 
-                <div class="container-inner post-tiles-container post-tiles-container--archive">
+            <div class="container-inner post-tiles-container post-tiles-container--archive">
 
                 <?php
                 /* Start the Loop */
@@ -44,14 +44,15 @@ get_header(); ?>
 
                 <?php endwhile;
 
-            else :
+                else : ?>
 
-                get_template_part('template-parts/content', 'none'); ?>
+                    <header class="page-header">
+                        <div class="container-inner">
+                            <h1 class="page-title">Nothing Found</h1>
+                        </div>
+                    </header><!-- .page-header -->
 
-
-                </div>
-
-            <?php endif; ?>
+                <?php endif; ?>
 
         </main><!-- #main -->
     </section><!-- #primary -->
