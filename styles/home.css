@@ -52,6 +52,7 @@
 
     & img {
         height: auto;
+        width: 100%;
     }
 
     & .post-image::after {
